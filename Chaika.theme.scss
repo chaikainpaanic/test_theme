@@ -1,5 +1,18 @@
-@if --Chat-Background == url(https://i.imgur.com/b8MjJQf.png){
-    :root{
-        --Chat-Background: url(https://i.imgur.com/ZL9YAxz.png);
+$root1: 1;
+$root2: 2;
+@while $root2 == 2 {
+    @if $root1 == 1 {
+        $root1: 2;
+        :root{
+            --Chat-Background: url(https://i.imgur.com/b8MjJQf.png);
+            }
+    }
+    @else {
+        $root1: 1;
+        :root{
+            --Chat-Background: url(https://i.imgur.com/ZL9YAxz.png);
+            } 
     }
 }
+    
+
