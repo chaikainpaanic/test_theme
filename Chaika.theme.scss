@@ -1,3 +1,5 @@
-:root{
-    --Chat-Background: url(https://i.imgur.com/b8MjJQf.png);
+@if --Chat-Background == url(https://i.imgur.com/b8MjJQf.png){
+    :root{
+        --Chat-Background: url(https://i.imgur.com/ZL9YAxz.png);
+    }
 }
